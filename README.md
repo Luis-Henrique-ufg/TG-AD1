@@ -20,12 +20,6 @@ Sem bibliotecas externas, sem APIs de sistema operacional e sem complexidade des
 
 ---
 
-## Funcionalidade Mais Fácil (Ponto de Partida)
-
-> **⭐ Funcionalidade Mais Fácil do Projeto:** **`Marcar / Desmarcar Aula como Concluída`** (`RF03` / `UC03`)
->
-> - **Por que é a mais fácil?** Não usa `malloc`/`free` nem altera ponteiros `*next`. É apenas verificar `if (aula == NULL) return false;` e inverter um booleano (`aula->concluida = !aula->concluida;`). O resultado já aparece na hora na tela (`[ ]` ↔ `[x]`) e na barra de progresso do curso!
-> - **Onde fica:** `aula_alternar_concluida()` em [src/aulas.c](src/aulas.c).
 
 **Primeiro passo mais fácil para cada um dos 4 estudantes:**
 - **Estudante 1:** `plataforma_inicializar()` em `src/cursos.c` (2 linhas!).
