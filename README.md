@@ -66,7 +66,7 @@ Sem bibliotecas externas, sem APIs de sistema operacional e sem complexidade des
 | :--- | :--- | :--- | :--- |
 | **UC01** | Gerenciar Cursos (Criar, Listar e Remover) | RF01, RF04, RF07 | Tela 1 — Dashboard |
 | **UC02** | Gerenciar Aulas de um Curso | RF02, RF04 | Tela 2 — Tela do Curso |
-| **UC03** | **Marcar / Desmarcar Aula como Concluída ⭐ *(Mais Fácil)*** | RF03, RF04 | Tela 2 — Tela do Curso |
+| **UC03** | **Marcar / Desmarcar Aula como Concluída** | RF03, RF04 | Tela 2 — Tela do Curso |
 | **UC04** | Ordenar Cursos (Nome ou Progresso) | RF05 | Tela 1 — Dashboard |
 | **UC05** | Ordenar Aulas por Duração | RF05 | Tela 2 — Tela do Curso |
 | **UC06** | Buscar Curso por Nome | RF06 | Tela 1 — Dashboard |
@@ -96,7 +96,7 @@ Sem bibliotecas externas, sem APIs de sistema operacional e sem complexidade des
 - **Exceções:** Título vazio ou duração negativa → exibe aviso e não insere.
 - **Pós-condições:** `curso->aulas`, `curso->total_aulas` e o progresso do curso são atualizados.
 
-#### UC03 — Marcar / Desmarcar Aula como Concluída ⭐ *(Funcionalidade Mais Fácil)*
+#### UC03 — Marcar / Desmarcar Aula como Concluída
 - **Objetivo:** Alternar o status de uma aula e atualizar imediatamente a porcentagem do curso.
 - **Pré-condições:** Estar dentro de um curso que possua ao menos uma aula.
 - **Fluxo Principal:**
@@ -184,7 +184,7 @@ Opcao: _
 | Integrante | Responsabilidade | Arquivo(s) | Qtd. Funções | Guia Passo a Passo |
 | :--- | :--- | :--- | :---: | :--- |
 | **Estudante 1** | Lista de Cursos (`malloc`, inserção no fim, busca por número, remoção e `free` total) | `src/cursos.c` | 5 | [GUIA_ESTUDANTE_1.md](docs/GUIA_ESTUDANTE_1.md) |
-| **Estudante 2** | Lista de Aulas, **concluir aula ⭐ *(Mais Fácil)***, cálculo de progresso (`%`) e `free` das aulas | `src/aulas.c` | 6 | [GUIA_ESTUDANTE_2.md](docs/GUIA_ESTUDANTE_2.md) |
+| **Estudante 2** | Lista de Aulas, **concluir aula**, cálculo de progresso (`%`) e `free` das aulas | `src/aulas.c` | 6 | [GUIA_ESTUDANTE_2.md](docs/GUIA_ESTUDANTE_2.md) |
 | **Estudante 3** | Ordenação das listas (Bubble/Selection Sort) e busca de curso por nome | `src/ordenacao.c` | 4 | [GUIA_ESTUDANTE_3.md](docs/GUIA_ESTUDANTE_3.md) |
 | **Estudante 4** | Leitura segura (`fgets`), telas no terminal, dados de exemplo e menu principal | `src/interface.c`<br>`src/main.c` | 6 + menu | [GUIA_ESTUDANTE_4.md](docs/GUIA_ESTUDANTE_4.md) |
 
