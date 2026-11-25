@@ -1,0 +1,13 @@
+# Executaveis e arquivos objeto
+*.exe
+*.out
+*.o
+ead
+testar_tudo
+
+# IDEs e sistema
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
