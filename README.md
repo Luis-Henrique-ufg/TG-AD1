@@ -8,7 +8,6 @@ Sem bibliotecas externas, sem APIs de sistema operacional e sem complexidade des
 
 ## Sumário
 
-- [Funcionalidade Mais Fácil (Ponto de Partida)](#funcionalidade-mais-fácil-ponto-de-partida)
 - [Requisitos Funcionais (RF)](#requisitos-funcionais-rf)
 - [Requisitos Não Funcionais (RNF)](#requisitos-não-funcionais-rnf)
 - [Casos de Uso (Use Cases)](#casos-de-uso-use-cases)
@@ -20,26 +19,17 @@ Sem bibliotecas externas, sem APIs de sistema operacional e sem complexidade des
 
 ---
 
-
-**Primeiro passo mais fácil para cada um dos 4 estudantes:**
-- **Estudante 1:** `plataforma_inicializar()` em `src/cursos.c` (2 linhas!).
-- **Estudante 2:** `aula_alternar_concluida()` em `src/aulas.c` (3 linhas!).
-- **Estudante 3:** `buscar_curso_por_nome()` em `src/ordenacao.c` (um único `while` na lista!).
-- **Estudante 4:** `mostrar_barra_progresso()` em `src/interface.c` (um `for` de 0 a 9 imprimindo `#` ou `-`!).
-
----
-
 ## Requisitos Funcionais (RF)
 
-| ID | Funcionalidade | Descrição | Dificuldade | Responsável |
-| :--- | :--- | :--- | :---: | :--- |
-| **RF01** | **Gerenciar Cursos (CRUD)** | Criar, listar, selecionar por número (`#1..#N`) e remover cursos armazenados em uma **lista simplesmente encadeada**. | Média | Estudante 1 + Estudante 4 |
-| **RF02** | **Gerenciar Aulas (CRUD)** | Criar, listar, selecionar por número e remover aulas (com título, duração em minutos e uma anotação curta) em uma **lista simplesmente encadeada** dentro de cada curso. | Média | Estudante 2 + Estudante 4 |
-| **RF03** | **Marcar / Desmarcar Aula como Concluída** | Alternar o status da aula entre `[ ]` (em aberto) e `[x]` (concluída). | **Muito Fácil** | Estudante 2 + Estudante 4 |
-| **RF04** | **Calcular Progresso do Curso** | Calcular a porcentagem de aulas concluídas (`0%` a `100%`, retornando `0%` se não houver aulas) e exibir em barra ASCII `[#######---]`. | Fácil | Estudante 2 + Estudante 4 |
-| **RF05** | **Ordenar Cursos e Aulas** | Ordenar listas encadeadas usando o algoritmo escolhido pelo grupo (ex.: Bubble Sort ou Selection Sort):<br>• **Cursos:** por nome (A–Z) e por maior progresso (`%`).<br>• **Aulas:** por menor duração (minutos). | Média | Estudante 3 + Estudante 4 |
-| **RF06** | **Buscar Curso por Nome** | Procurar o primeiro curso cujo nome contenha o termo digitado, sem diferenciar maiúsculas de minúsculas. | Fácil | Estudante 3 + Estudante 4 |
-| **RF07** | **Dados Iniciais de Exemplo** | Carregar automaticamente 3 cursos e algumas aulas na inicialização para facilitar testes e a apresentação. | Fácil | Estudante 4 |
+| ID | Funcionalidade | Descrição | Responsável |
+| :--- | :--- | :--- | :--- |
+| **RF01** | **Gerenciar Cursos (CRUD)** | Criar, listar, selecionar por número (`#1..#N`) e remover cursos armazenados em uma **lista simplesmente encadeada**. | Estudante 1 + Estudante 4 |
+| **RF02** | **Gerenciar Aulas (CRUD)** | Criar, listar, selecionar por número e remover aulas (com título, duração em minutos e uma anotação curta) em uma **lista simplesmente encadeada** dentro de cada curso. | Estudante 2 + Estudante 4 |
+| **RF03** | **Marcar / Desmarcar Aula como Concluída** | Alternar o status da aula entre `[ ]` (em aberto) e `[x]` (concluída). | Estudante 2 + Estudante 4 |
+| **RF04** | **Calcular Progresso do Curso** | Calcular a porcentagem de aulas concluídas (`0%` a `100%`, retornando `0%` se não houver aulas) e exibir em barra ASCII `[#######---]`. | Estudante 2 + Estudante 4 |
+| **RF05** | **Ordenar Cursos e Aulas** | Ordenar listas encadeadas usando o algoritmo escolhido pelo grupo (ex.: Bubble Sort ou Selection Sort):<br>• **Cursos:** por nome (A–Z) e por maior progresso (`%`).<br>• **Aulas:** por menor duração (minutos). | Estudante 3 + Estudante 4 |
+| **RF06** | **Buscar Curso por Nome** | Procurar o primeiro curso cujo nome contenha o termo digitado, sem diferenciar maiúsculas de minúsculas. | Estudante 3 + Estudante 4 |
+| **RF07** | **Dados Iniciais de Exemplo** | Carregar automaticamente 3 cursos e algumas aulas na inicialização para facilitar testes e a apresentação. | Estudante 4 |
 
 ---
 
@@ -66,7 +56,7 @@ Sem bibliotecas externas, sem APIs de sistema operacional e sem complexidade des
 | :--- | :--- | :--- | :--- |
 | **UC01** | Gerenciar Cursos (Criar, Listar e Remover) | RF01, RF04, RF07 | Tela 1 — Dashboard |
 | **UC02** | Gerenciar Aulas de um Curso | RF02, RF04 | Tela 2 — Tela do Curso |
-| **UC03** | **Marcar / Desmarcar Aula como Concluída** | RF03, RF04 | Tela 2 — Tela do Curso |
+| **UC03** | Marcar / Desmarcar Aula como Concluída | RF03, RF04 | Tela 2 — Tela do Curso |
 | **UC04** | Ordenar Cursos (Nome ou Progresso) | RF05 | Tela 1 — Dashboard |
 | **UC05** | Ordenar Aulas por Duração | RF05 | Tela 2 — Tela do Curso |
 | **UC06** | Buscar Curso por Nome | RF06 | Tela 1 — Dashboard |
@@ -184,7 +174,7 @@ Opcao: _
 | Integrante | Responsabilidade | Arquivo(s) | Qtd. Funções | Guia Passo a Passo |
 | :--- | :--- | :--- | :---: | :--- |
 | **Estudante 1** | Lista de Cursos (`malloc`, inserção no fim, busca por número, remoção e `free` total) | `src/cursos.c` | 5 | [GUIA_ESTUDANTE_1.md](docs/GUIA_ESTUDANTE_1.md) |
-| **Estudante 2** | Lista de Aulas, **concluir aula**, cálculo de progresso (`%`) e `free` das aulas | `src/aulas.c` | 6 | [GUIA_ESTUDANTE_2.md](docs/GUIA_ESTUDANTE_2.md) |
+| **Estudante 2** | Lista de Aulas, concluir aula, cálculo de progresso (`%`) e `free` das aulas | `src/aulas.c` | 6 | [GUIA_ESTUDANTE_2.md](docs/GUIA_ESTUDANTE_2.md) |
 | **Estudante 3** | Ordenação das listas (Bubble/Selection Sort) e busca de curso por nome | `src/ordenacao.c` | 4 | [GUIA_ESTUDANTE_3.md](docs/GUIA_ESTUDANTE_3.md) |
 | **Estudante 4** | Leitura segura (`fgets`), telas no terminal, dados de exemplo e menu principal | `src/interface.c`<br>`src/main.c` | 6 + menu | [GUIA_ESTUDANTE_4.md](docs/GUIA_ESTUDANTE_4.md) |
 

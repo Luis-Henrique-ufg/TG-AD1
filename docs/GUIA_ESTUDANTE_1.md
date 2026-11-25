@@ -6,7 +6,7 @@
 
 ---
 
-## Passo a Passo (do mais fácil para o mais trabalhoso)
+## Passo a Passo
 
 ### 1. `plataforma_inicializar(Plataforma *plat)` *(Comece por aqui — 2 linhas!)*
 - Se `plat == NULL`, apenas retorne (`return;`).

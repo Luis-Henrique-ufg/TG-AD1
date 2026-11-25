@@ -35,7 +35,6 @@ Aula *aula_buscar_por_indice(const Curso *curso, int indice);
 bool aula_remover(Curso *curso, int indice);
 
 /**
- * [FUNCIONALIDADE MAIS FACIL DO PROJETO]
  * Inverte o estado da aula: concluida <-> em aberto.
  * Retorna true se aula != NULL, false caso contrario.
  */

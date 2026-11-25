@@ -2,13 +2,13 @@
 
 **Seu único arquivo para editar:** `src/aulas.c`  
 **Contrato de referência:** [include/aulas.h](../include/aulas.h)  
-**Total de funções:** **6 funções** (incluindo a mais fácil do projeto!).
+**Total de funções:** **6 funções**.
 
 ---
 
-## Passo a Passo (do mais fácil para o mais trabalhoso)
+## Passo a Passo
 
-### 1. `aula_alternar_concluida(Aula *aula)` ⭐ *(Funcionalidade Mais Fácil!)*
+### 1. `aula_alternar_concluida(Aula *aula)`
 Comece por esta para ganhar confiança:
 ```c
 if (aula == NULL) {

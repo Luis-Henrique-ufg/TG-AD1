@@ -37,7 +37,7 @@ Troque apenas `titulo`, `anotacao`, `duracao_min` e `concluida` entre `a` e `b` 
 
 ---
 
-## Passo a Passo (do mais fácil para o mais trabalhoso)
+## Passo a Passo
 
 ### 1. Helper `static int comparar_texto_ci(const char *a, const char *b)`
 Compara duas strings de A–Z ignorando maiúsculas/minúsculas (portável para Windows e Linux):

@@ -40,7 +40,7 @@ int main(void) {
     assert(c1->total_aulas == 3);
     assert(strcmp(a2->anotacao, "") == 0);
 
-    /* Funcionalidade mais facil: alternar concluida */
+    /* Alternar estado de conclusao da aula */
     assert(aula_alternar_concluida(a1));
     assert(a1->concluida == true);
     assert(aula_alternar_concluida(a1));

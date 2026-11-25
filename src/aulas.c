@@ -41,7 +41,7 @@ bool aula_remover(Curso *curso, int indice) {
 }
 
 bool aula_alternar_concluida(Aula *aula) {
-    /* TODO (Estudante 2) - [FUNCIONALIDADE MAIS FACIL DO PROJETO]:
+    /* TODO (Estudante 2):
      * Se aula == NULL retornar false; senao aula->concluida = !aula->concluida e retornar true. */
     (void)aula;
     return false;
