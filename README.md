@@ -41,7 +41,7 @@ Sem bibliotecas externas, sem APIs de sistema operacional e sem complexidade des
 | :--- | :--- | :--- | :---: | :--- |
 | **RF01** | **Gerenciar Cursos (CRUD)** | Criar, listar, selecionar por número (`#1..#N`) e remover cursos armazenados em uma **lista simplesmente encadeada**. | Média | Estudante 1 + Estudante 4 |
 | **RF02** | **Gerenciar Aulas (CRUD)** | Criar, listar, selecionar por número e remover aulas (com título, duração em minutos e uma anotação curta) em uma **lista simplesmente encadeada** dentro de cada curso. | Média | Estudante 2 + Estudante 4 |
-| **RF03** | **Marcar / Desmarcar Aula como Concluída ⭐ *(Mais Fácil)*** | Alternar o status da aula entre `[ ]` (em aberto) e `[x]` (concluída). | **Muito Fácil** | Estudante 2 + Estudante 4 |
+| **RF03** | **Marcar / Desmarcar Aula como Concluída** | Alternar o status da aula entre `[ ]` (em aberto) e `[x]` (concluída). | **Muito Fácil** | Estudante 2 + Estudante 4 |
 | **RF04** | **Calcular Progresso do Curso** | Calcular a porcentagem de aulas concluídas (`0%` a `100%`, retornando `0%` se não houver aulas) e exibir em barra ASCII `[#######---]`. | Fácil | Estudante 2 + Estudante 4 |
 | **RF05** | **Ordenar Cursos e Aulas** | Ordenar listas encadeadas usando o algoritmo escolhido pelo grupo (ex.: Bubble Sort ou Selection Sort):<br>• **Cursos:** por nome (A–Z) e por maior progresso (`%`).<br>• **Aulas:** por menor duração (minutos). | Média | Estudante 3 + Estudante 4 |
 | **RF06** | **Buscar Curso por Nome** | Procurar o primeiro curso cujo nome contenha o termo digitado, sem diferenciar maiúsculas de minúsculas. | Fácil | Estudante 3 + Estudante 4 |
