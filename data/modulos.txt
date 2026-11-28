@@ -1,0 +1,4 @@
+1|1|Introducao e complexidade
+1|2|Listas encadeadas
+2|3|Modelagem entidade-relacionamento
+2|4|Consultas SQL

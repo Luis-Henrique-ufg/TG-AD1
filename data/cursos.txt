@@ -1,0 +1,2 @@
+1|Algoritmos e Estruturas de Dados 1|Listas encadeadas e complexidade
+2|Banco de Dados Relacionais|Modelagem e SQL basico

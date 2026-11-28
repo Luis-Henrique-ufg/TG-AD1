@@ -1,0 +1,5 @@
+2|1|3|Lista1 - complexidade|9.20
+5|2|3|Modelo ER|9.00
+1|1|2|Lista1 - complexidade|8.50
+3|1|2|Prova1|7.80
+4|2|2|Modelo ER|6.50

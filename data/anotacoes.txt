@@ -1,0 +1,10 @@
+1|1|2|45|Revisar definicao de algoritmo antes da prova
+1|2|2|320|Complexidade O(1) aparece na insercao no fim do descritor
+2|10|2|30|Cuidado com a leitura de linha em arquivos CRLF
+2|4|3|75|Exemplo da aula: percorrer a lista ate encontrar o ID
+2|3|2|120|Comparar O(n) de busca linear com O(1) da cauda
+4|5|2|180|O ponteiro anterior permite remover a cauda em O(1)
+4|6|2|600|Reescrever exercicio 2 usando lista duplamente encadeada
+5|7|3|90|Historico limitado a 5 aulas acessadas
+9|8|2|240|WHERE filtra linhas antes do GROUP BY
+10|9|3|60|Rever INNER JOIN e chaves estrangeiras

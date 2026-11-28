@@ -1,0 +1,10 @@
+1|1|Visao geral da disciplina|600|1
+1|2|Analise de complexidade|900|1
+1|3|Slides de boas-vindas|120|0
+2|4|Lista simples encadeada|1200|1
+2|5|Lista duplamente encadeada|1100|1
+2|6|Exercicios comentados de listas|1800|0
+3|7|Entidades e relacionamentos|800|1
+3|8|Exemplo de modelo ER|300|0
+4|9|SELECT e filtros|950|1
+4|10|JOIN na pratica|870|1
